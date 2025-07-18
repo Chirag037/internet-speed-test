@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 import speedtest
+import time 
 
 def test_speed():
     try:
