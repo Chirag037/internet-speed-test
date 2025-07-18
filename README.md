@@ -14,7 +14,7 @@ A simple and user-friendly desktop application to test your internet connection 
 - ✅ Works on **Windows**, **macOS**, and **Linux**
 
 ---
-
+CLONE ME: git clone https://github.com/Chirag037/internet-speed-test
 ## 📦 Requirements
 
 Install the required module with:
