@@ -25,3 +25,28 @@ def test_speed():
         label_status.config(text="Test failed ❌")
 
 
+# GUI Setup
+window = tk.Tk()
+window.title("Internet Speed Test")
+window.geometry("400x300")
+window.resizable(False, False)
+
+label_title = tk.Label(window, text="📶 Internet Speed Test", font=("Arial", 16, "bold"))
+label_title.pack(pady=10)
+
+btn_test = tk.Button(window, text="Start Test", font=("Arial", 12), command=test_speed, bg="green", fg="white")
+btn_test.pack(pady=10)
+
+label_status = tk.Label(window, text="", font=("Arial", 12), fg="blue")
+label_status.pack()
+
+label_download = tk.Label(window, text="Download Speed: -- Mbps", font=("Arial", 12))
+label_download.pack(pady=5)
+
+label_upload = tk.Label(window, text="Upload Speed: -- Mbps", font=("Arial", 12))
+label_upload.pack(pady=5)
+
+label_ping = tk.Label(window, text="Ping: -- ms", font=("Arial", 12))
+label_ping.pack(pady=5)
+
+window.mainloop()
